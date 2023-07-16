@@ -9,6 +9,22 @@
     padding: 0;
 }
 
+
+/* Commmon Style */
+section{
+     padding: 120px;
+}
+
+@media screen and (max-width: 576px) {
+    section{
+        padding: 30px;
+    }
+}
+
+.primary-color{
+    color: #FF900E;
+}
+
 .header{
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 120px;
@@ -52,7 +68,7 @@ nav > ul li{
 
 .paragraph{
     color: #727272;
-    margin-bottom: 30px;
+    padding: 40px 0;
 }
 .banner img{
     margin-top: 30px;
@@ -95,5 +111,40 @@ nav > ul li{
     }
     nav ul{
         margin: 20px 15px;
+    }
+}
+
+/* Feature Section Style */
+.feature{
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+.feature-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.feature-images img{
+    width: 250px;
+}
+.feature-content h3{
+    font-size: 2.5rem;
+    color: #727272;
+
+}
+
+/* Responsive Features */
+@media screen and (max-width: 576px) {
+    .feature{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .feature-images{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feature-images img{
+        width: 100%;
     }
 }
