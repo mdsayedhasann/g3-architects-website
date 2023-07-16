@@ -25,6 +25,10 @@ section {
     color: #FF900E;
 }
 
+/* header{
+    width: 1300px;
+} */
+
 main {
     width: 1300px;
     margin: 0 auto;
@@ -47,7 +51,8 @@ main {
 /* Header Style  */
 .header {
     background: rgba(255, 144, 14, 0.10);
-    padding: 50px 120px;
+    /* padding: 50px 50px; */
+    padding: 50px 20px;
 
 }
 
@@ -228,6 +233,12 @@ nav>ul li {
 
     .feature-images img {
         width: 100%;
+    }
+    /* Fact Style */
+    .facts{
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
     }
 }
 
