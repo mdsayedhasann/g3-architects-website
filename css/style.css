@@ -286,10 +286,16 @@ footer{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
+        text-align: center;
     }
     .sponsors-logos img{
         /* width: 50%;
         margin: 0 auto; */
+    }
+    footer{
+        margin: 0 0px;
+        
+        font-size: .8rem;
     }
 }
 
