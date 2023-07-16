@@ -11,7 +11,8 @@
 
 .header{
     background: rgba(255, 144, 14, 0.10);
-    padding: 50px 240px;
+    padding: 50px 120px;
+
 }
 .nav-title{
     font-size: 2rem;
@@ -29,4 +30,38 @@ nav > ul{
 nav > ul li{
     margin-right: 20px;
     font-size: 1.25rem;
+}
+
+/* Banner */
+
+.banner{
+    padding: 30px 0;
+    text-align: center;
+}
+.banner-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.banner-title{
+    padding: 10px 0;
+    color: #131313;
+    font-size: 3.5rem;
+    font-weight: 00;
+
+}
+
+.paragraph{
+    color: #727272;
+    margin-bottom: 30px;
+}
+.banner img{
+    margin-top: 30px;
+    width: 100%;
+}
+.btn{
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #FF900E;
+    border: 0;
+    border-radius: 5px;
 }
