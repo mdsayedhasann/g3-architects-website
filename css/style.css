@@ -112,6 +112,48 @@ nav>ul li {
     cursor: pointer;
 }
 
+
+/* Facts Style */
+.facts{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-heading{
+    padding: 30px 0
+}
+
+.fact{
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #FF900E;
+    gap: 30px;
+}
+.facts-heading h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.facts-heading p{
+    font-size: 1rem;
+    color: #727272;
+    padding: 15px 0;
+    line-height: 1.15rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive Banner*/
 
 /* Mobile Device */
