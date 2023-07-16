@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
 * {
-    
+
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -11,54 +11,79 @@
 
 
 /* Commmon Style */
-section{
-     padding: 120px;
+section {
+    padding: 120px;
 }
 
 @media screen and (max-width: 576px) {
-    section{
-        padding: 30px;
+    section {
+        padding: 20px;
     }
 }
 
-.primary-color{
+.primary-color {
     color: #FF900E;
 }
 
-.header{
+main {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+    main {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    main {
+        width: 992px;
+        margin: 0 auto;
+    }
+}
+
+/* Header Style  */
+.header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 120px;
 
 }
-.nav-title{
+
+.nav-title {
     font-size: 2rem;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav > ul{
+nav>ul {
     list-style: none;
     display: flex;
 }
-nav > ul li{
+
+nav>ul li {
     margin-right: 20px;
     font-size: 1rem;
 }
 
 /* Banner */
 
-.banner{
+.banner {
     padding: 30px 0;
     text-align: center;
 }
-.banner-content{
+
+.banner-content {
     max-width: 800px;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     padding: 10px 0;
     color: #131313;
     font-size: 3.5rem;
@@ -66,15 +91,18 @@ nav > ul li{
 
 }
 
-.paragraph{
+.paragraph {
     color: #727272;
     padding: 40px 0;
+    line-height: 1.5rem;
 }
-.banner img{
+
+.banner img {
     margin-top: 30px;
     width: 100%;
 }
-.btn{
+
+.btn {
     padding: 20px 25px;
     color: #fff;
     background-color: #FF900E;
@@ -88,13 +116,15 @@ nav > ul li{
 
 /* Mobile Device */
 @media screen and (max-width:576px) {
-    .header{
+    .header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    nav ul{
+
+    nav ul {
         padding: 20px 0;
         font-size: .50em;
     }
@@ -103,33 +133,41 @@ nav > ul li{
 
 /* Tablet Device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .header{
+    .header {
         padding: 50px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    nav ul{
+
+    nav ul {
         margin: 20px 15px;
     }
 }
 
 /* Feature Section Style */
-.feature{
+.feature {
     display: flex;
     gap: 50px;
-    justify-content: space-around;
     align-items: center;
 }
-.feature-images{
+
+.feature-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
-.feature-images img{
+
+.feature-images img {
     width: 250px;
 }
-.feature-content h3{
+
+.feature-content {
+    width: 450px;
+}
+
+.feature-content h3 {
     font-size: 2.5rem;
     color: #727272;
 
@@ -137,14 +175,31 @@ nav > ul li{
 
 /* Responsive Features */
 @media screen and (max-width: 576px) {
-    .feature{
+    .feature {
         flex-direction: column-reverse;
         text-align: center;
     }
-    .feature-images{
+
+    .feature-images {
         grid-template-columns: repeat(2, 1fr);
     }
-    .feature-images img{
+
+    .feature-images img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .feature {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .feature-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-images img {
         width: 100%;
     }
 }
